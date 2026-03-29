@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cotizador | MB Eventos</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="brand-row">
+                <img class="logo" src="../logo.png" alt="MB Eventos">
+                <div class="brand">
+                    <strong>MB Eventos</strong>
+                    <span>Cotizador (vista inicial)</span>
+                </div>
+            </div>
+            <nav class="nav">
+                <a class="link" href="../index.html">Página pública</a>
+                <a class="link" href="../login.html">Login</a>
+            </nav>
+        </header>
+
+        <main class="hero">
+            <h1>Cotizador</h1>
+            <p class="subtitle">Aquí construiremos el sistema tipo carrito: proveedores, servicios, contrato y pagos.</p>
+
+            <div class="grid">
+                <section class="card">
+                    <h2>Acceso</h2>
+                    <p>
+                        Próximo paso: proteger esta ruta con Firebase Auth.
+                        También podemos habilitar un “acceso rápido” por NFC con sesión temporal (5 min).
+                    </p>
+                    <div class="tags">
+                        <span class="tag">Auth requerido</span>
+                        <span class="tag">Sesión temporal</span>
+                    </div>
+                </section>
+
+                <section class="card">
+                    <h2>Catálogo (simulación)</h2>
+                    <p>
+                        Enseguida vamos a cargar un catálogo simulado (50 proveedores) con servicios: salones, DJ,
+                        grupos, mariachi, catering, mobiliario, etc.
+                    </p>
+                    <div class="tags">
+                        <span class="tag">50 proveedores</span>
+                        <span class="tag">Carrito</span>
+                    </div>
+                </section>
+
+                <section class="card">
+                    <h2>Regla anti-juguete</h2>
+                    <p>
+                        Para acceso rápido (sin contraseña), la sesión se deshabilita a los 5 minutos.
+                        Para usuarios autenticados, aplicamos reglas diferentes.
+                    </p>
+                </section>
+
+                <section class="card">
+                    <h2>Siguiente entrega</h2>
+                    <p>
+                        Vista del catálogo + carrito + total + guardar cotización.
+                        Más adelante: contrato, anticipo, datos fiscales/bancarios y flujo de pagos.
+                    </p>
+                </section>
+            </div>
+        </main>
+
+        <footer>
+            <div>MB Eventos</div>
+        </footer>
+    </div>
+</body>
+</html>

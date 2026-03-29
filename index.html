@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MB Eventos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="brand-row">
+                <img class="logo" src="logo.png" alt="MB Eventos">
+                <div class="brand">
+                    <strong>MB Eventos</strong>
+                    <span>Planeación, coordinación y logística de eventos</span>
+                </div>
+            </div>
+            <nav class="nav">
+                <a class="link" href="login.html">Iniciar sesión</a>
+                <a class="button" href="app/quote.html">Entrar a cotizar</a>
+            </nav>
+        </header>
+
+        <main>
+            <section class="hero-slider" aria-label="Presentación">
+                <div class="slider" data-slider>
+                    <div class="slide is-active s1" data-slide>
+                        <div class="slide-content">
+                            <span class="tag">Marisol Beauregard</span>
+                            <h1>Coordinación de eventos con orden, estilo y puntualidad</h1>
+                            <p class="subtitle">Desde la planeación hasta la ejecución, cuidamos cada detalle del evento.</p>
+                            <div class="cta-row">
+                                <a class="button" href="#contacto">Solicitar información</a>
+                                <a class="link" href="#servicios">Ver servicios</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slide s2" data-slide>
+                        <div class="slide-content">
+                            <span class="tag">Eventos sociales</span>
+                            <h1>Celebraciones sin estrés</h1>
+                            <p class="subtitle">Coordinación el día del evento, proveedores, montaje y cronograma.</p>
+                            <div class="cta-row">
+                                <a class="button" href="app/quote.html">Cotizar en minutos</a>
+                                <a class="link" href="#galeria">Ver galería</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slide s3" data-slide>
+                        <div class="slide-content">
+                            <span class="tag">Empresarial y gubernamental</span>
+                            <h1>Logística y protocolo con claridad</h1>
+                            <p class="subtitle">Planeación, comunicación con proveedores y ejecución impecable.</p>
+                            <div class="cta-row">
+                                <a class="button" href="#contacto">Agendar llamada</a>
+                                <a class="link" href="#servicios">Qué incluye</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="dots dots-overlay" data-dots aria-label="Indicadores"></div>
+                </div>
+            </section>
+
+            <section class="section" id="servicios" aria-label="Servicios">
+                <div class="section-header">
+                    <h2>Servicios</h2>
+                    <p class="subtitle">Asesoramiento, coordinación y logística adaptada a tu tipo de evento.</p>
+                </div>
+
+                <div class="cards-3">
+                    <article class="card">
+                        <h3 class="h3">Planeación</h3>
+                        <p>Presupuesto, cronograma, checklist y plan de proveedores para llegar con todo listo.</p>
+                        <div class="tags">
+                            <span class="tag">Ruta crítica</span>
+                            <span class="tag">Timing</span>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <h3 class="h3">Coordinación</h3>
+                        <p>Dirección del evento: montaje, staff, proveedores y resolución de imprevistos.</p>
+                        <div class="tags">
+                            <span class="tag">Proveedores</span>
+                            <span class="tag">Ejecución</span>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <h3 class="h3">Logística</h3>
+                        <p>Flujos, accesos, montaje, desmontaje y comunicación clara para que todo suceda a tiempo.</p>
+                        <div class="tags">
+                            <span class="tag">Operación</span>
+                            <span class="tag">Orden</span>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="pill-row">
+                    <span class="pill">Eventos sociales</span>
+                    <span class="pill">Eventos empresariales</span>
+                    <span class="pill">Eventos gubernamentales</span>
+                </div>
+            </section>
+
+            <section class="section" id="galeria" aria-label="Galería">
+                <div class="section-header row">
+                    <div>
+                        <h2>Galería</h2>
+                        <p class="subtitle">Inspiración de montajes, ambientación y momentos.</p>
+                    </div>
+                    <div class="gallery-controls">
+                        <button class="icon-button" type="button" data-gallery-prev aria-label="Desplazar izquierda">‹</button>
+                        <button class="icon-button" type="button" data-gallery-next aria-label="Desplazar derecha">›</button>
+                    </div>
+                </div>
+
+                <div class="gallery" data-gallery>
+                    <div class="gallery-item gi-1" role="img" aria-label="Evento 1"></div>
+                    <div class="gallery-item gi-2" role="img" aria-label="Evento 2"></div>
+                    <div class="gallery-item gi-3" role="img" aria-label="Evento 3"></div>
+                    <div class="gallery-item gi-4" role="img" aria-label="Evento 4"></div>
+                    <div class="gallery-item gi-5" role="img" aria-label="Evento 5"></div>
+                    <div class="gallery-item gi-6" role="img" aria-label="Evento 6"></div>
+                </div>
+            </section>
+
+            <section class="section" id="contacto" aria-label="Contacto">
+                <div class="section-header">
+                    <h2>Contacto</h2>
+                    <p class="subtitle">Cuéntanos el tipo de evento y te respondemos con los siguientes pasos.</p>
+                </div>
+
+                <div class="contact-grid">
+                    <form class="card form" action="#" method="post">
+                        <div class="field">
+                            <label class="label" for="nombre">Nombre</label>
+                            <input class="input" id="nombre" name="nombre" type="text" autocomplete="name" placeholder="Tu nombre" required>
+                        </div>
+
+                        <div class="field">
+                            <label class="label" for="telefono">Teléfono</label>
+                            <input class="input" id="telefono" name="telefono" type="tel" autocomplete="tel" placeholder="Tu teléfono" required>
+                        </div>
+
+                        <div class="field">
+                            <label class="label" for="tipo">Tipo de evento</label>
+                            <select class="input" id="tipo" name="tipo" required>
+                                <option value="" selected disabled>Selecciona una opción</option>
+                                <option value="social">Social</option>
+                                <option value="empresarial">Empresarial</option>
+                                <option value="gubernamental">Gubernamental</option>
+                            </select>
+                        </div>
+
+                        <div class="field">
+                            <label class="label" for="mensaje">Mensaje</label>
+                            <textarea class="input" id="mensaje" name="mensaje" rows="4" placeholder="Fecha, ciudad, número de invitados y lo que necesitas" required></textarea>
+                        </div>
+
+                        <div class="form-actions">
+                            <button class="button" type="submit">Enviar</button>
+                            <span class="help">Con Firebase conectaremos este formulario a correo/CRM.</span>
+                        </div>
+                    </form>
+
+                    <div class="card contact-card">
+                        <h3 class="h3">Información</h3>
+                        <p>Agenda una llamada o solicita una cotización para iniciar la planeación.</p>
+                        <div class="info-list">
+                            <div class="info-item">
+                                <span class="info-k">Horario</span>
+                                <span class="info-v">Lun-Sáb · 9:00 a 19:00</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-k">Atención</span>
+                                <span class="info-v">Planeación · Coordinación · Logística</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-k">Cotizador</span>
+                                <span class="info-v">Disponible con acceso</span>
+                            </div>
+                        </div>
+
+                        <div class="tags">
+                            <a class="button" href="app/quote.html">Entrar a cotizar</a>
+                            <a class="link" href="login.html">Iniciar sesión</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer" aria-label="Pie de página">
+            <div class="footer-grid">
+                <div>
+                    <div class="footer-brand">
+                        <img class="logo" src="logo.png" alt="MB Eventos">
+                        <div>
+                            <strong>MB Eventos</strong>
+                            <div class="footer-muted">Coordinación de eventos</div>
+                        </div>
+                    </div>
+                    <div class="footer-muted">Planeación, coordinación y logística de eventos sociales, empresariales y gubernamentales.</div>
+                </div>
+
+                <div>
+                    <strong>Secciones</strong>
+                    <div class="footer-links">
+                        <a class="link" href="#servicios">Servicios</a>
+                        <a class="link" href="#galeria">Galería</a>
+                        <a class="link" href="#contacto">Contacto</a>
+                    </div>
+                </div>
+
+                <div>
+                    <strong>Acceso</strong>
+                    <div class="footer-links">
+                        <a class="link" href="login.html">Iniciar sesión</a>
+                        <a class="link" href="app/quote.html">Cotizador</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span class="footer-muted">© <span id="year"></span> MB Eventos</span>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        (function () {
+            const sliderRoot = document.querySelector('[data-slider]');
+            const slides = Array.from(document.querySelectorAll('[data-slide]'));
+            const dotsRoot = document.querySelector('[data-dots]');
+            const gallery = document.querySelector('[data-gallery]');
+            const gPrev = document.querySelector('[data-gallery-prev]');
+            const gNext = document.querySelector('[data-gallery-next]');
+            const year = document.getElementById('year');
+
+            if (year) year.textContent = String(new Date().getFullYear());
+
+            if (!sliderRoot || slides.length === 0) return;
+
+            let index = Math.max(0, slides.findIndex(s => s.classList.contains('is-active')));
+            let timer = null;
+
+            const setActive = (nextIndex) => {
+                const safeIndex = ((nextIndex % slides.length) + slides.length) % slides.length;
+                slides.forEach((s, i) => s.classList.toggle('is-active', i === safeIndex));
+                if (dotsRoot) {
+                    Array.from(dotsRoot.children).forEach((d, i) => d.classList.toggle('is-active', i === safeIndex));
+                }
+                index = safeIndex;
+            };
+
+            const start = () => {
+                stop();
+                timer = window.setInterval(() => setActive(index + 1), 6500);
+            };
+
+            const stop = () => {
+                if (timer) {
+                    window.clearInterval(timer);
+                    timer = null;
+                }
+            };
+
+            if (dotsRoot) {
+                dotsRoot.innerHTML = '';
+                slides.forEach((_, i) => {
+                    const b = document.createElement('button');
+                    b.type = 'button';
+                    b.className = 'dot' + (i === index ? ' is-active' : '');
+                    b.setAttribute('aria-label', 'Ir a slide ' + (i + 1));
+                    b.addEventListener('click', () => {
+                        setActive(i);
+                        start();
+                    });
+                    dotsRoot.appendChild(b);
+                });
+            }
+            sliderRoot.addEventListener('mouseenter', stop);
+            sliderRoot.addEventListener('mouseleave', start);
+            start();
+
+            const scrollGallery = (dir) => {
+                if (!gallery) return;
+                const amount = Math.min(520, Math.max(280, Math.floor(gallery.clientWidth * 0.75)));
+                gallery.scrollBy({ left: dir * amount, behavior: 'smooth' });
+            };
+
+            if (gPrev) gPrev.addEventListener('click', () => scrollGallery(-1));
+            if (gNext) gNext.addEventListener('click', () => scrollGallery(1));
+        })();
+    </script>
+</body>
+</html>
