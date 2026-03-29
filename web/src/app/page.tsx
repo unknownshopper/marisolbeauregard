@@ -127,7 +127,7 @@ export default function Home() {
               Contacto
             </a>
             <Button asChild className="ml-1 rounded-full">
-              <a href="/cotizar">Entrar a cotizar</a>
+              <a href="/cotizar/arma-tu-evento">Arma tu evento</a>
             </Button>
           </nav>
         </div>
@@ -179,7 +179,7 @@ export default function Home() {
                           <a href="#servicios">Ver servicios</a>
                         </Button>
                         <Button asChild size="lg" variant="outline" className="rounded-full">
-                          <a href="/cotizar">Entrar a cotizar</a>
+                          <a href="/cotizar/arma-tu-evento">Arma tu evento</a>
                         </Button>
                       </div>
 
@@ -367,7 +367,7 @@ export default function Home() {
                 </div>
                 <div className="mt-6 flex flex-wrap gap-3">
                   <Button asChild className="rounded-full">
-                    <a href="/cotizar">Entrar a cotizar</a>
+                    <a href="/cotizar/arma-tu-evento">Arma tu evento</a>
                   </Button>
                 </div>
               </div>

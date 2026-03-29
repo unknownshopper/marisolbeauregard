@@ -193,8 +193,15 @@ export default function TerminosPage() {
             </div>
           </section>
 
+          <section className="mt-8 grid gap-4">
+            <h2 className="text-xl font-bold">Contacto</h2>
+            <p className="text-sm text-muted-foreground">
+              Para dudas o solicitudes, escríbenos por WhatsApp o correo.
+            </p>
+          </section>
+
           <div className="pt-2">
-            <Link className="text-sm font-semibold underline" href="/cotizar">
+            <Link className="text-sm font-semibold underline" href="/cotizar/arma-tu-evento">
               Volver
             </Link>
           </div>

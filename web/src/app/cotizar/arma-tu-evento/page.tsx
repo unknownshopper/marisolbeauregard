@@ -1030,7 +1030,7 @@ export default function ArmaTuEventoPage() {
           <div>
             <h1 className="text-3xl font-extrabold tracking-tight sm:text-4xl">Arma tu Evento</h1>
             <p className="max-w-2xl text-sm text-muted-foreground">
-              Selecciona opciones paso a paso. Al final podrás enviarlo al cotizador para ver totales.
+              Selecciona opciones paso a paso. Al final verás el resumen con totales.
             </p>
           </div>
 
@@ -1039,7 +1039,7 @@ export default function ArmaTuEventoPage() {
               Reiniciar
             </Button>
             <Button asChild type="button" variant="outline" className="rounded-full">
-              <a href="/cotizar">Volver al cotizador</a>
+              <a href="/cotizar/arma-tu-evento">Volver</a>
             </Button>
           </div>
         </div>
@@ -1795,7 +1795,7 @@ export default function ArmaTuEventoPage() {
                         Armar otro
                       </Button>
                       <Button asChild type="button" variant="outline" className="rounded-full">
-                        <a href="/cotizar">Ver carrito</a>
+                        <a href="/cotizar/arma-tu-evento">Volver</a>
                       </Button>
                     </div>
                   </div>

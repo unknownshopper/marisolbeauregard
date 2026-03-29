@@ -9,9 +9,10 @@ import { Label } from "@/components/ui/label";
 function LoginInner() {
   const router = useRouter();
   const params = useSearchParams();
-  const next = useMemo(() => params.get("next") || "/cotizar", [params]);
+  const next = useMemo(() => params.get("next") || "/cotizar/arma-tu-evento", [params]);
 
-  const [code, setCode] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
@@ -24,7 +25,7 @@ function LoginInner() {
       const res = await fetch("/api/auth/login", {
         method: "POST",
         headers: { "content-type": "application/json" },
-        body: JSON.stringify({ code, next }),
+        body: JSON.stringify({ email, password, next }),
       });
 
       if (!res.ok) {
@@ -48,19 +49,32 @@ function LoginInner() {
           <div className="text-sm text-muted-foreground">Acceso</div>
           <h1 className="mt-2 text-2xl font-extrabold tracking-tight">Iniciar sesión</h1>
           <p className="mt-2 text-sm text-muted-foreground">
-            Ingresa tu código de acceso para continuar al cotizador.
+            Ingresa tu correo y contraseña para continuar.
           </p>
 
           <form className="mt-6 grid gap-4" onSubmit={onSubmit}>
             <div className="grid gap-2">
-              <Label htmlFor="code">Código</Label>
+              <Label htmlFor="email">Correo</Label>
               <input
-                id="code"
-                value={code}
-                onChange={(e) => setCode(e.target.value)}
+                id="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
                 className="h-11 rounded-xl border border-input bg-background px-4 text-sm outline-none focus-visible:ring-2 focus-visible:ring-ring"
-                placeholder="Tu código"
-                autoComplete="one-time-code"
+                placeholder="tu@email.com"
+                autoComplete="email"
+              />
+            </div>
+
+            <div className="grid gap-2">
+              <Label htmlFor="password">Contraseña</Label>
+              <input
+                id="password"
+                type="password"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+                className="h-11 rounded-xl border border-input bg-background px-4 text-sm outline-none focus-visible:ring-2 focus-visible:ring-ring"
+                placeholder="Tu contraseña"
+                autoComplete="current-password"
               />
             </div>
 
@@ -70,7 +84,11 @@ function LoginInner() {
               </div>
             ) : null}
 
-            <Button type="submit" className="h-12 rounded-full" disabled={loading || code.trim().length === 0}>
+            <Button
+              type="submit"
+              className="h-12 rounded-full"
+              disabled={loading || email.trim().length === 0 || password.trim().length === 0}
+            >
               {loading ? "Entrando..." : "Continuar"}
             </Button>
 
