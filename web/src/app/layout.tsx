@@ -2,7 +2,11 @@ import type { Metadata } from "next";
 import { Geist_Mono, Ubuntu } from "next/font/google";
 import "./globals.css";
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://mbeventos.com";
+const siteUrl =
+  process.env.NEXT_PUBLIC_SITE_URL ??
+  (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : "http://localhost:3000");
+
+const ogImage = new URL("/logo.png", siteUrl).toString();
 
 const ubuntu = Ubuntu({
   variable: "--font-ubuntu",
@@ -31,14 +35,14 @@ export const metadata: Metadata = {
     description:
       "Planeación, coordinación y logística de eventos sociales, empresariales y gubernamentales.",
     url: siteUrl,
-    images: [{ url: "/logo.png", width: 512, height: 512, alt: "MB Eventos" }],
+    images: [{ url: ogImage, width: 512, height: 512, alt: "MB Eventos" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "MB Eventos | Coordinación de Eventos",
     description:
       "Planeación, coordinación y logística de eventos sociales, empresariales y gubernamentales.",
-    images: ["/logo.png"],
+    images: [ogImage],
   },
 };
 
