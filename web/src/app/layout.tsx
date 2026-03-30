@@ -6,7 +6,7 @@ const siteUrl =
   process.env.NEXT_PUBLIC_SITE_URL ??
   (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : "http://localhost:3000");
 
-const ogImage = new URL("/logo.png", siteUrl).toString();
+const ogImage = new URL("/opengraph-image", siteUrl).toString();
 
 const ubuntu = Ubuntu({
   variable: "--font-ubuntu",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     description:
       "Planeación, coordinación y logística de eventos sociales, empresariales y gubernamentales.",
     url: siteUrl,
-    images: [{ url: ogImage, width: 512, height: 512, alt: "MB Eventos" }],
+    images: [{ url: ogImage, width: 1200, height: 630, alt: "MB Eventos" }],
   },
   twitter: {
     card: "summary_large_image",
