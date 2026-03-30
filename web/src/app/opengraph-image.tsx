@@ -39,13 +39,14 @@ export default async function Image() {
             backgroundColor: "#ffffff",
             border: "1px solid rgba(0,0,0,0.08)",
             boxShadow: "0 20px 60px rgba(0,0,0,0.10)",
+            overflow: "hidden",
           }}
         >
           <img
             src={logoUrl}
             alt="MB Eventos"
-            width={640}
-            height={640}
+            width={420}
+            height={420}
             style={{
               objectFit: "contain",
               borderRadius: 32,

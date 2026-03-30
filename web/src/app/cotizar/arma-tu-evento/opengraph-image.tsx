@@ -41,6 +41,7 @@ export default async function Image() {
             backgroundColor: "#ffffff",
             border: "1px solid rgba(0,0,0,0.08)",
             boxShadow: "0 20px 60px rgba(0,0,0,0.10)",
+            overflow: "hidden",
           }}
         >
           <div style={{ display: "flex", flexDirection: "column", gap: 14 }}>
@@ -52,8 +53,8 @@ export default async function Image() {
           <img
             src={logoUrl}
             alt="MB Eventos"
-            width={360}
-            height={360}
+            width={280}
+            height={280}
             style={{ objectFit: "contain", borderRadius: 32 }}
           />
         </div>
